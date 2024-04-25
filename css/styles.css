@@ -1,0 +1,77 @@
+:root {
+    --info-darkbgclr: #1F2937;
+    --btn-clr: #3882f6;
+    --quote-bgclr: #E5E7EB;
+    --head-logoclr: #f9faf8;
+    
+    --hero-mainTextSize: 48px;
+    --hero-secTextSize: 18px;
+    --head-logoTextSize: 24px;
+    --info-quoteSize: 36px;
+
+    --fw-extra: extra-bold;
+    --fw-light: light italic;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+header, .first {
+    background-color: var(--info-darkbgclr);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerNav > ul {
+    display: flex;
+    
+}
+
+.first {
+    padding: 3rem;
+    display: flex;
+}
+
+.second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+}
+
+.boxes {
+    display: flex;
+    padding: 3rem;
+}
+
+.quoteSection {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.author {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 3rem;
+}
+
+.signUpCall {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 5rem;
+}
+
+footer {
+    background-color: var(--info-darkbgclr);
+    color: var(--quote-bgclr);
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+}
