@@ -1,7 +1,7 @@
 :root {
     --info-darkbgclr: #1F2937;
     --btn-clr: #3882f6;
-    --quote-bgclr: #E5E7EB;
+    --quote-link-bgclr: #E5E7EB;
     --head-logoclr: #f9faf8;
     
     --hero-mainTextSize: 48px;
@@ -16,7 +16,10 @@
 
 * {
     margin: 0;
-    padding: 0
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 header, .first {
@@ -26,23 +29,58 @@ header, .first {
 .navbar {
     display: flex;
     justify-content: space-between;
+    padding: 2rem 8rem;
+    color: var(--head-logoclr)
+}
+
+
+a {
+    text-decoration: none;
+
+}
+
+.titleMain {
+    font-size: var(--head-logoTextSize);
+    font-weight: 800;
 }
 
 .headerNav > ul {
     display: flex;
-    
+    color: var(--head-logoclr)
 }
 
+
 .first {
-    padding: 3rem;
+    padding: 3rem 12rem;
     display: flex;
+    color: var(--head-logoclr);
 }
+
+.titleText {
+    font-size: var(--hero-mainTextSize);
+    font-weight: 600;
+}
+
+.sentence {
+    font-size: var(--hero-secTextSize);
+}
+.sideText {
+    display: flex;
+    flex-direction: column;
+    padding-right: 15rem;
+}
+
 
 .second {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 3rem;
+    padding: 3em;
+}
+
+.titleText2 {
+    font-size: var(--info-quoteSize);
+    font-weight: 600;
 }
 
 .boxes {
@@ -50,22 +88,54 @@ header, .first {
     padding: 3rem;
 }
 
+.box {
+    border: solid var(--btn-clr) .4rem;
+    margin: 20px;
+    padding: 85px;
+    border-radius: 20px;
+}
+
 .quoteSection {
-    padding: 3rem;
+    
     display: flex;
     flex-direction: column;
+    background-color: var(--quote-link-bgclr);
+    
+}
+
+.author, .quote {
+    display: flex;
+    justify-content: flex-end;
+    font-size: var(--info-quoteSize);
+    font-style: italic;
+    font-weight: 100;
+    padding: 5em;
+}
+
+.quote {
+    padding-bottom: 0;
 }
 
 .author {
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 3rem;
+    padding-top: 0;
 }
-
 .signUpCall {
     display: flex;
     justify-content: space-between;
-    padding: 2rem 5rem;
+    padding: 8em 15em;
+    background-color: #3882f6;
+    margin: 10em;
+    border: 2px solid var(--btn-clr);
+    border-radius: 20px;
+    color: var(--head-logoclr);
+
+}
+.signUpCall > button {
+    padding: 0.1rem 2rem;
+    background-color: #3882f6;
+    color: #E5E7EB;
+    border-radius: 10px;
+    border: 1px solid white;
 }
 
 footer {
@@ -74,4 +144,5 @@ footer {
     padding: 3rem;
     display: flex;
     justify-content: center;
+    color: var(--head-logoclr);
 }
